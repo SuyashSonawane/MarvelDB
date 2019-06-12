@@ -1,0 +1,58 @@
+<ion-grid no-padding no-margin class="no-padding">
+  <ion-row>
+    <ion-item class="no-padding" no-padding no-margin>
+      <ion-img src="../assets/marvel.gif" id=marvel-gif>
+      </ion-img>
+    </ion-item>
+  </ion-row>
+  <ion-row>
+    <ion-col align-self-center>
+      <ion-card align-self-center>
+        <ion-card-header>
+          <ion-card-subtitle>Marvel Database</ion-card-subtitle>
+          <ion-card-title>About</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <h2>A Online Marvel Database made by using the Official Marvel Api from Marvel &trade;<br>
+            Here you can search about any Hero , Villan , Comics
+          </h2>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <!-- main interface -->
+  <ion-row>
+    <ion-col align-self-center>
+      <ion-card-title margin>
+        Search the Database here
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Enter Character Name</ion-label>
+          <ion-input [(ngModel)]="serachField"></ion-input>
+        </ion-item>
+        <!-- <ion-item>
+            <ion-label position="floating">Floating Label</ion-label>
+            <ion-input></ion-input>
+          </ion-item> -->
+      </ion-card-content>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <div class="button" *ngIf="serachField">
+
+
+      <ion-button id="ion-btn" (click)="search()">
+        Search
+      </ion-button>
+
+    </div>
+  </ion-row>
+
+</ion-grid>
+
+
+
+<!-- fc0e2b2bcfc273962ce941db43aa2039 -->

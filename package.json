@@ -1,7 +1,7 @@
 {
-  "name": "Ben10",
+  "name": "Marvel Database",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Suyash Sonawane",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
